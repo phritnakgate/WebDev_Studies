@@ -1,5 +1,5 @@
 # 🌐WebDev_Studies🌐
-**Ref. การเรียนสร้างเว็บใน repo**
+**About my web development study, I often study with Kongruksiam on Youtube.**
 ## 1. HTML5(●'◡'●)
 
-- [ปูพื้นฐานการสร้างเว็บด้วย HTML5](https://www.youtube.com/watch?v=0hfeNPM7piw&t=314)
+- [Fundamental HTML5](https://www.youtube.com/watch?v=0hfeNPM7piw&t=314)
