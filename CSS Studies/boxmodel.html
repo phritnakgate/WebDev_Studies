@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            font-family: 'TH Sarabun New';
+            font-size: 18;
+        }
+        .box{
+            width: 500px;
+            height: 100px;
+            border: dashed 2.5px black;
+            background-color: blanchedalmond;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Box Model</b> ใช้กำหนดพื้นที่รอบ element ได้แก่</p>
+    <ol>
+        <li>Element</li>
+        <li>Padding : ระหว่างขอบกับเนื้อหา</li>
+        <ul>
+            <li>กำหนดเป็นลำดับ top right bottom left เช่น 5px 10px 15px 20px</li>
+            ถ้ากำหนด 3 หรือ 2 padding จะรวบ
+            <li>กำหนดทุกทิศทาง : margin:10px</li>
+        </ul>
+        <li>Border</li>
+        <li>Margin : ระหว่างขอบกับ Element อื่นๆ</li>
+        <ul>
+            <li>กำหนดเป็นลำดับ top right bottom left เช่น 5px 10px 15px 20px</li>
+            ถ้ากำหนด 3 หรือ 2 margin จะรวบ
+            <li>กำหนดทุกทิศทาง : margin:10px</li>
+        </ul>
+        Example margin-left 10px padding 10px :
+        <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorum ex molestiae voluptatem, iste odio. Accusamus nulla voluptate excepturi sunt voluptatem, nostrum consequatur vitae inventore debitis repudiandae corrupti voluptas dolorem.</p>
+    </ol>
+    <a href="index.html">Back</a>
+</body>
+</html>
