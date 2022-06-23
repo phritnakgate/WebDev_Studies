@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 960px;
+        }
+        .box{
+            background-color: aliceblue;
+            border: 1px dashed black;
+            padding: 10px;
+            margin: 10px;
+        }
+        #box-2{
+            float: left;
+            width: 60%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+        #clear{
+            clear: both;
+        }
+        body{
+            line-height: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Title1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eum ut atque beatae totam, pariatur explicabo possimus ab corrupti sit modi officia autem nesciunt voluptate tenetur odio rerum obcaecati tempore.</p>
+        </div>
+        <div class="box" id="box-2">
+            <h1>Title2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eum ut atque beatae totam, pariatur explicabo possimus ab corrupti sit modi officia autem nesciunt voluptate tenetur odio rerum obcaecati tempore.</p>
+        </div>
+        <div class="box" id="box-3">
+            <h1>Title3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eum ut atque beatae totam, pariatur explicabo possimus ab corrupti sit modi officia autem nesciunt voluptate tenetur odio rerum obcaecati tempore.</p>
+        </div>
+        <div id="clear">
+        </div>
+        <div class="box">
+            <h1>Title4</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eum ut atque beatae totam, pariatur explicabo possimus ab corrupti sit modi officia autem nesciunt voluptate tenetur odio rerum obcaecati tempore.</p>
+        </div>
+    </div>
+    <a href="index.html">กลับหน้าแรก</a>
+</body>
+</html>
