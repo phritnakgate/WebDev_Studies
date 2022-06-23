@@ -1,0 +1,21 @@
+/*ทดสอบการเขียนแบบ External*/
+*{
+    font-family: 'TH Sarabun New';
+}
+p#mes{
+    font-size:14px;
+    color:#FFF;
+    background-color:#000;
+}
+p#testpx{
+    font-size:14px;
+}
+p#testpt{
+    font-size:14pt;
+}
+p#testper{
+    font-size:100%;
+}
+p#testrem{
+    font-size:1.5rem;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /*Universal Selector*/
+        *{
+            font-family: 'Kanit', sans-serif;
+            font-size: 16pt;
+        }
+        h1{
+            background-color: darkslategray;
+            width: auto;
+            height: 100px;
+            color: bisque;
+            font-size: 40pt;
+            font-style: bolder;
+            text-align: center;
+        }
+        p#justifyex{
+            text-align: justify;
+            border: dashed 1px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font</h1>
+    <hr>
+    <b>1. font-family</b><br>
+    <b>2. font-size</b> มี 2 ประเภทคือ <br>
+    <ol>
+        <li>ค่าคงที่</li>
+        <ul>
+            <li font-size="xx-small">xx-small</li>
+            <li font-size="x-small">x-small</li>
+            <li font-size="small">small</li>
+            <li font-size="medium">medium</li>
+            <li font-size="large">large</li>
+            <li font-size="x-large">x-large</li>
+            <li font-size="xx-large">xx-large</li>
+            </ul>
+        <li>ตัวเลข: ระบุได้เลย เช่น 20px,12pt</li>
+    </ol>
+    <b>3. font-weight</b> มี 2 ประเภทคือ<br>
+    <ol>
+        <li>ค่าคงที่</li>
+        <ul>
+            <li font-weight="lighter">lighter</li>
+            <li font-weight="bold">bold</li>
+            <li font-weight="bolder">bolder</li>
+            </ul>
+        <li>ตัวเลข: 100-900</li>
+    </ol>
+    <b>4. font-style</b> italic,oblique <br>
+    <b>5. color</b> กำหนดได้ 4 แบบ<br>
+    <ol>
+        <li>ชื่อสี เช่น red blue</li>
+        <li>RGB:rgb(r,g,b)</li>
+        <li>Hexadecimal: เช่น #ffffff</li>
+        <li>HSL: (hue,saturation,lightness)</li>
+    </ol>
+    <b>6. text-decoration</b> กำหนดได้ 4 แบบ<br>
+    <ol>
+        <li>none</li>
+        <li text-decoration="underline">underline(ขีดใต้ข้อความ)</li>
+        <li text-decoration="overline">overline(ขีดเหนือข้อความ)</li>
+        <li text-decoration="line-through">line-through(ขีดทับข้อความ)</li>
+    </ol>
+    <b>7. text-align</b> กำหนดได้ 4 แบบ<br>
+    <ol>
+        <li>left</li>
+        <li>right</li>
+        <li>center</li>
+        <li>justify:กระจายข้อความทุกบรรทัดให้มีค่าเท่ากัน</li>
+    justify Example : 
+    <p id="justifyex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laudantium neque voluptates quidem vel dignissimos eos ipsam hic impedit porro. Ex nihil, quasi magnam ea officiis delectus atque voluptatum? Repudiandae.</p>
+    <hr>
+    <a href="index.html">กลับหน้าแรก</a>
+    </body>
+</html>
