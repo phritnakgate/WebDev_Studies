@@ -3,9 +3,14 @@
     font-family: 'TH Sarabun New';
 }
 p#mes{
-    font-size:14px;
+    font-size:14pt;
     color:#FFF;
     background-color:#000;
+}
+p#mespic{
+    font-size:14pt;
+    background-image:url(https://cdn.pixabay.com/photo/2020/10/11/08/00/lighthouse-5645042__340.png);
+    background-position: center;
 }
 p#testpx{
     font-size:14px;
