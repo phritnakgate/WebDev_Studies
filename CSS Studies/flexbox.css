@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    background-color: #f1f1f1;
+    flex-direction: row;
+    /*flex-wrap: wrap; จัด item ที่เกิน container เรียงจากบนลงล่าง*/
+}
+.item{
+    background: orange;
+    border: 1px solid black;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+#item2{
+    flex-shrink: 2;
+}
+#item4{
+    flex-grow: 2;
+}
