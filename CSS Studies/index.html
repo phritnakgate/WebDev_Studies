@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamental CSS</title>
+    <!--เขียนแบบ Embeded-->
+    <style>
+        /*Universal Selector*/
+        *{
+            font-family: 'TH Sarabun New';
+            font-size: 16pt;
+        }
+        
+        /*Big Header*/
+        h1{
+            font-size: 40pt;
+            font-style: bolder;
+            text-align: center;
+        }
+        .title{
+            font-size: 30pt;
+            text-align: center;
+        }
+        #id1{
+            font-size: 20pt;
+        }
+        .message{
+            font-size: 18pt;
+        }
+        div{
+            font-size: 2em;
+        }
+        div.over{
+            width:200px;
+            height:200px;
+            border: 3px dotted red;
+        }
+        div.over#hide{
+            
+            overflow-x: hidden;
+        }
+        #button{
+            font-size: 24pt;
+            background-color: black;
+            color: bisque;
+            text-align: center;
+            display: inline;
+
+        }
+        a:hover{
+            text-decoration: dotted;
+            background-color:aquamarine;
+            color: black;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .eiei img{
+            float: right;
+            box-shadow: 5px 5px 5px #888888,
+                       -5px -5px 5px pink;
+        }
+    </style>
+    <!--External-->
+    <link rel="stylesheet" href="exterstyle.css">
+</head>
+<body>
+    <h1>Fundamental CSS3</h1>
+    <p class="title">Study with Kongruksiam</p>
+    <a id="button" href="font.html">Font</a>
+    <a id="button" href="border.html">Border</a>
+    <a id="button" href="boxmodel.html">Box Model</a>
+    <a id="button" href="displayinlineblock.html">Display</a>
+    <a id="button" href="position.html">Position</a>
+    <a id="button" href="mediaquery.html">Responsive Web</a>
+    <a id="button" href="flexbox.html">FlexBox</a>
+    <a id="button" href="grid.html">Grid Layout</a>
+    <a id="button" href="variable.html">CSS Var</a>
+    <a id="button" href="animation.html">Transition</a>
+    <hr>
+    <h2 class="title">Selector</h2>
+    <p id="id1">Tag HTML,ID,Class ทีต้องการกำหนดคุณสมบัติ แบ่งออกเป็น 3 รูปแบบ</p>
+    <p class="message"><b>1. Element:</b> กำหนด style ให้ html โดยตรง <br>
+        <b>2. Class:</b> กำหนด style โดยใช้ชื่อ class เป็น selector โดยใช้จุด <br>
+        <b>3. ID:</b> กำหนด style โดยใช้ชื่อ ID เป็น selector โดยใช้เครืองหมาย #</p>
+    </p>
+    <h2 class="title">รูปแบบการประกาศใช้ CSS</h2>
+    <p id="id1">แบ่งออกเป็น 2 รูปแบบ</p>
+    <p class="message"><b>1. Internal: แบ่งออกเป็น 2 ชนิด</b><br>
+        &nbsp;&nbsp;&nbsp; 1. Inline: แทรกลงใน tag <br>
+        &nbsp;&nbsp;&nbsp; 2. Embeded: กำหนดบน head เขียนภายใต้ style และ /style <br>
+        <b>2. External:</b> กำหนดไฟล์แยกเป็นสกุล css แล้วเชื่อมเข้ามา<br>
+        Example:<br></p>
+    <p id="mes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora voluptatem dolor necessitatibus iusto, similique labore? Officiis corrupti quae architecto.</p>
+    <p id="mespic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora voluptatem dolor necessitatibus iusto, similique labore? Officiis corrupti quae architecto.</p>
+    <h2 class="title">Unit</h2>
+    <p id="id1"><b>แบบตายตัว</b></p>
+    <p id="testpx">14px</p>
+    <p id="testpt">14pt</p>
+    <p id="id1"><b>แบบอัตราส่วน</b></p>
+    <p id="testper"><b>Percent:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempora perspiciatis odit temporibus eius impedit voluptatem ducimus quibusdam libero quasi?</p>
+    <p id="testrem"><b>Rem:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempora perspiciatis odit temporibus eius impedit voluptatem ducimus quibusdam libero quasi?</p>
+    <p><b>Em</b></p>
+    <div>
+        test1(10x2=20px)
+        <div>
+            test2(20x2=40px)
+            <div>
+                test3(40x2=80px)
+            </div>
+        </div>
+    </div>
+    <h2 class="title">Float</h2>
+    <div class="eiei"><img src="https://cdn.pixabay.com/photo/2013/08/29/02/47/eiffel-tower-176935__340.jpg" alt="">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vero deserunt exercitationem? Omnis, perferendis expedita.</div>
+    <a id="button" href="float.html">Float Example</a>
+    <h2 class="title">Position</h2>
+    <p>Position แบ่งออกเป็น 5 แบบ</p>
+    <ol>
+        <li>static: default</li>
+        <li>relative: นับจากจุดนั้นๆที่วัตถุอยู่</li>
+        <li>absolute: จัดวางวัตถุให้อยู่ตำแหน่งไหนก็ได้แต่ต้องกำหนดจากขอบ element (ไม่มีอะไรครอบถือเป็น body)</li>
+        <li>fixed: วางวัตถุให้อยูู่ตำแหน่งเดิม</li>
+        <li>sticky: ให้วัตถุติดขอบเมื่อเลื่อนไปถึง</li>
+    </ol>
+    <h2 class="title">Overflow</h2>
+    การจำกัดการแสดงผล แบ่งเป็น
+    <ol>
+        <li>visible: แสดงทั้งหมด</li>
+        <div class="over">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+        <li>hidden: ไม่แสดง</li>
+        <div id="hide" class="over">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa non dolores, tempore culpa aliquid possimus dicta nemo eveniet atque mollitia illo, repellendus itaque ipsum rerum ea excepturi quam quis.
+        </div>
+        <li>scroll</li>
+        <li>auto</li>
+    </ol>
+    <h2 class="title">Advance Selector</h2>
+    <p>Advance Selector แบ่งออกเป็น 5 แบบ</p>
+    <ol>
+        <li>Targeted Selector</li>
+        <ul>
+            <li>Descendant Selector</li>
+                การใช้ เช่น div p
+            <li>Child Selector</li>
+                การใช้ เช่น div>p
+        </ul>
+        <li>Style by Attribute</li>
+        ใช้ Attribute เป็นเกณฑ์ เช่น a กำหนดโดยใช้ target
+        a[target="_blank"]{
+            color: red;
+        }
+        <li>Special Attribute</li>
+        ใช้คล้าย special Attribute แต่กำหนดได้มากกว่า 1 ค่า
+        เช่น input[type="email"],input[type="text"]{
+            color: red;
+        }
+        <li>Pseudo Selector</li>
+        การใช้ให้นำ element มาต่อด้วย : เช่น :first-child,:last-child,:nth-child(2),:nth-child(2n),:nth-child(even),:nth-child(odd)
+        <ul>
+            <li>First-Child</li>
+            <li>Last-Child</li>
+            <li>nth-Child</li>
+        </ul>
+        <li>Before & After Pseudo</li>
+        ใช้เนื้อหาด้านหน้าหรือด้านหลัง element ที่ต้องการทำงาน เช่น header::before
+    </ol>
+    <h2 class="title">CSS Variable</h2>
+    <p>ช่วยอำนวยความสะดวกในการกำหนด Style</p>
+    <p>การตั้งตัวแปร: :root{
+        --ชื่อตัวแปร:properties
+    }</p>
+    <p>การใช้งาน: elememt:var(--ชื่อตัวแปร)</p>
+    <h2 class="title">Transform</h2>
+    <ul>
+        <li>translate(x,y)</li>
+        <li>scale(x,y)</li>
+        <li>rotate(angle(degree))</li>
+        <li>skewX(angle(degree))</li>
+        <li>skewY(angle(degree))</li>
+    </ul>
+</body>
+</html>

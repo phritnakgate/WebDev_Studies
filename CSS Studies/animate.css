@@ -1,0 +1,71 @@
+body{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    transition: background-color 3s,width 3s,ease-in 0.5s;
+}
+.box2{
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box3{
+    background-color: palegoldenrod;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: animate2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 400px;
+    }
+}
+@keyframes animate2{
+    0%{
+        top:0;
+        left:0;
+        transform: rotate(0deg);
+    }
+    25%{
+        top:0;
+        left:300px;
+        transform: rotate(45deg);
+    }
+    50%{
+        top:300px;
+        left:300px;
+        transform: rotate(90deg);
+    }
+    75%{
+        top:300px;
+        left:0;
+        transform: rotate(45deg);
+    }
+    100%{
+        top:0;
+        left:0;
+        transform: rotate(0deg);
+    }
+}
+.box:hover{
+    background-color: red;
+    width: 300px;
+}
