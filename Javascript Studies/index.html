@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamental Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Internal JS-->
+    <script type="text/javascript">
+        document.write("lorem ipsum dolor sit amet");
+    </script>
+    <!--External JS-->
+    <script src="1_introduction-var.js"></script>
+    <script src="2_array.js"></script>
+    <script src="3_Operator.js"></script>
+    <script src="4_ControlStructure.js"></script>
+    <script src="5_Function.js"></script>
+    <script src="6_ArrayProperties.js"></script>
+    <script src="7_JsObject.js"></script>
+    <script src="8_confirmbox.js"></script>
+    <script src="9_DOM.js"></script>
+</head>
+<body id="lightmode">
+    <button onclick="ldMode()">Dark Mode</button>
+    <button onclick="dlMode()">Light Mode</button>
+    <h1>Fundamental Javascript</h1>
+    <hr>
+    <h2>รูปแบบการเขียน Javascript</h2>
+    <p>แบ่งเป็น 2 แบบ</p>
+    <ol>
+        <li>Internal: กำหนดไว้ใน head หรือ body ภายใต้ script</li>
+        <li>External: กำหนดไว้เป็นไฟล์ด้านนอกนามสกุล .js</li>
+    </ol>
+    <h2>Bank</h2>
+    <button onclick="checkBal()">CheckBalance</button>
+    <form>
+        <label for="">จำนวนเงิน</label>
+        <input type="number" id="money">
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+    </form>
+    <h2>Test Function</h2>
+    <button onclick="hello()">Hello1</button>
+    <input type="text" id="name">
+    <button onclick="sayhi()">Hello2</button>
+    <h2>Test Confirm</h2>
+    <button onclick="deleteData()">Delete Data</button>
+    <h2>DOM</h2>
+    <p><strong>DOM (Document Object Model)</strong>คือ HTML ที่มองเป็นก้อน Object เมื่อหน้าเว็บโหลดเสร็จเรียบร้อย Web Browser จะสร้าง DOM ออกมา</p>
+    คุณสมบัติของ DOM
+    <ul>
+        <li>เข้าถึงและเปลี่ยนคุณสมบัติของ Element ในหน้าเว็บได้</li>
+        <li>ควบคุมและเปลี่ยนรูปแบบ CSS</li>
+        <li>ตอบสนองกับทุกเหตุการณ์ที่เกิดขึนในหน้าเว็บได้</li>
+    </ul>
+    <h3>เข้าถึง Element ผ่าน ID,Tag,Class</h3>
+    <ul>
+        <li>document.getElementById(ID);</li>
+        <li>document.getElementByTagName(Tag);</li>
+        <li>document.getElementByClassName(Class);</li>
+    </ul>
+    <h3>เปลี่ยนเนื้อหา</h3>
+    <ul>
+        <li>HTML: element.innerHTML</li>
+        <li>Text: element.innerText</li>
+        <li>style: element.style.properties = value</li>
+    </ul>
+    <p>หรือ element.setAttribute(attribute,value)</p>
+    ตัวอย่าง
+    <button onclick="totalBal()">Remain</button>
+    <p id="testbal">เงินคงเหลือจะปรากฏที่นี่</p>
+    <h3>DOM Nodes</h3>
+    <ul>
+        <li>สร้าง Element ใหม่: document.createElement(element)</li>
+        <li>ลบ node: document.removeChlid(element)</li>
+        <li>ต่อ element ใน node แม่: document.appendChild(element)</li>
+        <li>แทนที่ element: document.replaceChild(new,old)</li>
+    </ul>
+    ตัวอย่าง 
+    <ul id="testnode"></ul>
+    <button onclick="Ele()">Create Element</button>
+    <button onclick="delEle()">Delete Element</button>
+    <h3>DOM CSS</h3>
+    <ul>
+        <li>เพิ่ม class style: element.classList.add("class")</li>
+        <li>ลบ class style: element.classList.remove("class")</li>
+        <li>สลับ class style: element.classList.toggle("class")</li>
+        <li>เปรียบเทียบ class style: element.classList.contains("class")</li>
+    </ul>
+    <h3>DOM Event</h3>
+    <p>คือ เหตุการณ์หรือการกระทำบางอย่างที่เกิดขึ้นกับ element เช่น ย้ายเมาส์,กดปุ่ม keyboard</p>
+    <h3>EventListener</h3>
+    <p>คือ เหตุการณ์หรือการกระทำบางอย่างที่เกิดขึ้นกับ element แต่รูปแบบการเขียนจะเขียนในฝั่ง js</p>
+</body>
+</html>
