@@ -10,10 +10,11 @@
 
 - [Fundamental CSS3](https://www.youtube.com/playlist?list=PLltVQYLz1BMBeWsNwB06VT3t8m5575qCP)
 
+- CSS Framework
+  - [Fundamental Bootstrap5](https://www.youtube.com/watch?v=El7FovOjfjE&t=60s)
+
+
 ### 3. Javascript(✿◡‿◡)
 
 - [Fundamental Javascript](https://www.youtube.com/watch?v=AbjY-ajKgSI&t=2290)
 
-### 4. Bootstrap5 o(*￣︶￣*)o
-
-- [Fundamental Bootstrap5](https://www.youtube.com/watch?v=El7FovOjfjE&t=60s)
